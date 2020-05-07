@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-oidc-test"
+    }
+  },
+  "defaultProject": "ng-oidc-test",
+  "cli": {
+    "analytics": false
+  }
 }
