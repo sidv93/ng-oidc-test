@@ -1,2 +1,13 @@
-<p>In app component</p>
-<router-outlet></router-outlet>
+<div style="display: flex; flex-direction: column;">
+    <div style="height: 7vh; width: 100%">
+        <ul style="height: 100%">
+            <li><a class="active" routerLink="/home">Home</a></li>
+            <li><a routerLink="/dashboard">Dashboard</a></li>
+            <li><a routerLink="/posts">Posts</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+          </ul>
+    </div>
+    <div style="height: 93vh;">
+        <router-outlet></router-outlet>
+    </div>
+</div>

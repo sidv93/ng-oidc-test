@@ -11,7 +11,6 @@ export class DashboardComponent implements OnInit {
   constructor(private oauthService: OAuthService) { }
 
   ngOnInit(): void {
-    console.log('accessToken', this.oauthService.getAccessToken());
   }
 
 }
