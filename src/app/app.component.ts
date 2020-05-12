@@ -11,4 +11,8 @@ export class AppComponent {
   constructor(private authService: AuthService) {
     this.authService.initLoginFlow();
   }
+
+  public logout() {
+    this.authService.logout();
+  }
 }

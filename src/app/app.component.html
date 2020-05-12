@@ -1,11 +1,17 @@
 <div style="display: flex; flex-direction: column;">
-    <div style="height: 7vh; width: 100%">
-        <ul style="height: 100%">
-            <li><a class="active" routerLink="/home">Home</a></li>
-            <li><a routerLink="/dashboard">Dashboard</a></li>
-            <li><a routerLink="/posts">Posts</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
-          </ul>
+    <div style="height: 7vh; display: flex;
+        background-color: #333; align-items: center; justify-content: space-between; padding: 0 30px">
+        <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+            <ul style="display: flex; align-items: center; justify-content: center;">
+                <li><a class="active" routerLink="/home">Home</a></li>
+                <li><a routerLink="/dashboard">Dashboard</a></li>
+                <li><a routerLink="/posts">Posts</a></li>
+            </ul>
+        </div>
+        <div style="align-items: center; justify-content: center;">
+            <button style="padding: 10px; border-radius: 20%; cursor: pointer; font-size: 16px;"
+                (click)="logout()">Logout</button>
+        </div>
     </div>
     <div style="height: 93vh;">
         <router-outlet></router-outlet>

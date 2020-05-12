@@ -24,4 +24,8 @@ export class AuthService {
       this.router.navigate([decodeURIComponent(this.oauthService.state)]);
     }
   }
+
+  public logout() {
+    this.oauthService.logOut();
+  }
 }
